@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const scrollToWorkspace = () => {
@@ -43,7 +44,7 @@ const Hero = () => {
         }}
       />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 py-20 text-center">
+      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 py-12 text-center">
         <span
           className="rounded-full px-4 py-2 text-sm font-semibold"
           style={{
@@ -62,7 +63,7 @@ const Hero = () => {
             fontFamily: "Plus Jakarta Sans",
           }}
         >
-          Intelligent
+          Virtual
           <br />
 
           <span
@@ -73,7 +74,7 @@ const Hero = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Concrete Mix Design
+            Civil Engineering Lab
           </span>
         </h1>
 
@@ -88,9 +89,8 @@ const Hero = () => {
           Compare different mixes, evaluate performance and generate
           engineering insights from a single workspace.
         </p>
-
+        <Link to="/concrete-mix/">
         <button
-          onClick={scrollToWorkspace}
           className="mt-12 flex items-center gap-2 rounded-xl px-8 py-4 font-semibold text-white transition hover:scale-105 cursor-pointer"
           style={{
             background: "var(--accent)",
@@ -100,6 +100,7 @@ const Hero = () => {
 
           <ArrowRight size={18} />
         </button>
+        </Link>
       </div>
     </section>
   );

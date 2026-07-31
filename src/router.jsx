@@ -1,17 +1,36 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
-import App from "./pages/App";
+import { createBrowserRouter } from "react-router-dom";
+
+import RootLayout from "./components/layout/RootLayout";
+
+import Home from "./pages/Home";
+import ConcreteMix from "./pages/ConcreteMix";
+import StructuralDesign from "./pages/StructuralDesign";
+import TrafficAnalysis from "./pages/TrafficAnalysis";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <RootLayout />,
     children: [
       {
-        path: "Home",
-        element: <div>Home</div>,
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "concrete-mix",
+        element: <ConcreteMix />,
+      },
+      {
+        path: "structural-design",
+        element: <StructuralDesign />,
+      },
+      {
+        path: "traffic-analysis",
+        element: <TrafficAnalysis />,
       },
     ],
   },
+
 ]);
 
 export default router;
