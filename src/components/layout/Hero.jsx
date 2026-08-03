@@ -91,6 +91,7 @@ const Hero = () => {
         </p>
         <Link to="/concrete-mix/">
         <button
+         onClick={scrollToWorkspace}
           className="mt-12 flex items-center gap-2 rounded-xl px-8 py-4 font-semibold text-white transition hover:scale-105 cursor-pointer"
           style={{
             background: "var(--accent)",

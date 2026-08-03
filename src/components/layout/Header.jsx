@@ -1,5 +1,6 @@
 import React from "react";
 import ThemeButton from "../ThemeButton";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
     >
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6 lg:px-10">
         {/* Logo */}
+        <Link to="/">
         <div className="flex items-center gap-3">
           <div
             className="flex h-11 w-11 items-center justify-center rounded-xl text-lg font-bold text-white"
@@ -21,7 +23,6 @@ const Header = () => {
           >
             C
           </div>
-
           <div>
             <h1
               className="text-xl font-bold"
@@ -38,7 +39,7 @@ const Header = () => {
             </p>
           </div>
         </div>
-
+        </Link>
         <ThemeButton/>
       </div>
     </header>

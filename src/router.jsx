@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import ConcreteMix from "./pages/ConcreteMix";
 import StructuralDesign from "./pages/StructuralDesign";
 import TrafficAnalysis from "./pages/TrafficAnalysis";
+import DataBase from "./pages/DataBase";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: "traffic-analysis",
         element: <TrafficAnalysis />,
       },
+      {
+      path:"database",
+      element:<DataBase />
+      }
     ],
   },
 

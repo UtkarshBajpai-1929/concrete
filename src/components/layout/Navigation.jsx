@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { House, Beaker, Building2, CarFront } from "lucide-react";
+import { House, Beaker, Building2, CarFront, Database} from "lucide-react";
 
 const navItems = [
   {
@@ -12,18 +12,24 @@ const navItems = [
     path: "/concrete-mix",
     icon: Beaker,
   },
+   {
+      name: "Data Base",
+      path: "/database",
+      icon: Database,
+    },
   {
     name: "Structural Design",
     path: "/structural-design",
     icon: Building2,
   },
-  {
-    name: "Traffic Analysis",
-    path: "/traffic-analysis",
-    icon: CarFront,
-  },
+    {
+      name: "Traffic Analysis",
+      path: "/traffic-analysis",
+      icon: CarFront,
+    },
+   
+  
 ];
-
 const Navigation = () => {
   return (
     <section className="-mt-6 relative z-20">

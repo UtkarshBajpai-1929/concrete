@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer
-      className="mt-24 border-t"
+      className="border-t"
       style={{
         background: "var(--bg)",
         borderColor: "var(--border)",
