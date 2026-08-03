@@ -7,6 +7,8 @@ import structuralPreview from "../assets/structural.png";
 const Home = () => {
   return (
     <>
+    <Hero/>
+    <Navigation/>
       <div className="px-12 py-16">
       <section className="grid lg:grid-cols-2 gap-16 items-center">
                <FeatureVisual
