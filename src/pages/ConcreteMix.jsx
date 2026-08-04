@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 
 import ConcreteHero from "../components/concrete-mix/workspace/ConcreteHero";
 import Workspace from "../components/concrete-mix/workspace/Workspace";
+import Hero from "../components/layout/Hero" 
 import Navigation from "../components/layout/Navigation";
 import PackingVisualization from "../components/concrete-mix/visualization/PackingVisualization";
 
